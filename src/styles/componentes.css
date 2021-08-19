@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(225, 100%, 98%);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contenedor-principal {
+  background-color: white;
+  width: 450px;
+  height: 700px;
+  border: none;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.sumario {
+  margin: 50px;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.precios {
+  background-color: hsl(225, 100%, 98%);
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  place-items: center;
+  border-radius: 20px;
+  margin: 50px 50px;
+  height: 100px;
+}
+.precios a {
+  grid-column: 4/5;
+  text-decoration: none;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.botones button {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.botones button:first-child {
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  margin-bottom: 15px;
+}
+.botones button:hover {
+  box-shadow: 0px 8px 25px 1px hsl(245, 54%, 69%);
+}
